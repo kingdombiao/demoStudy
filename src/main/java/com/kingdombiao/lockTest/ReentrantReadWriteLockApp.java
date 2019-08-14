@@ -3,6 +3,7 @@ package com.kingdombiao.lockTest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
@@ -41,7 +42,7 @@ public class ReentrantReadWriteLockApp {
         try {
             writeLock.lock();
             System.out.println(Thread.currentThread().getName() + " 写操作在执行..");
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             map.put(key,value);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -56,21 +57,29 @@ public class ReentrantReadWriteLockApp {
         //app.put("key2", "value2");
 
         System.out.println(app.get("kkk"));
+        System.out.println(app.get("kkk"));
 
-        new Thread(new Runnable() {
+        /*LockSupport.park(new Object());
+
+        System.out.println("线程阻塞了... ");*/
+
+       /* new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println(app.get("key2"));
             }
-        }).start();
+        }).start();*/
 
-       /* new Thread(new Runnable() {
+       app.put("key2", "value2");
+        //app.put("key3", "value2");
+
+       new Thread(new Runnable() {
             @Override
             public void run() {
                app.put("key2", "value2");
             }
         }).start();
-
+ /*
         new Thread(new Runnable() {
             @Override
             public void run() {
