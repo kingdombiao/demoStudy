@@ -1,4 +1,4 @@
-package com.kingdombiao.producerConsumer.semaphore;
+package com.kingdombiao.producerConsumer.condition;
 
 import java.util.Random;
 
@@ -6,12 +6,12 @@ import java.util.Random;
  * 描述:
  * 生产者
  *
- * @author unovo
- * @create 2019-08-13 15:42
+ * @author biao
+ * @create 2019-08-14 13:29
  */
 public class Producer implements Runnable {
 
-    private Container container;
+    Container container;
 
     public Producer(Container container) {
         this.container = container;
@@ -19,6 +19,7 @@ public class Producer implements Runnable {
 
     @Override
     public void run() {
-       container.put(new Random().nextInt(100));
+        while (true)
+            container.put(new Random().nextInt(100));
     }
 }

@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e8af08c-0058-4ac4-afb3-9520bf85cd5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/lockTest/LockDownApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/ProducerConsumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/waitAndnotify/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/waitAndnotify/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/waitAndnotify/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/waitAndnotify/ProducerConsumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/threadCommunication/WaitNotifyTest.java" afterDir="false" />
+    <list default="true" id="3e8af08c-0058-4ac4-afb3-9520bf85cd5f" name="Default Changelist" comment="BlockingQueue实现生产者消费者">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/ProducerConsumerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingdombiao/lockTest/ReentrantReadWriteLockApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/lockTest/ReentrantReadWriteLockApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/ProducerConsumerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/ProducerConsumerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,95 +19,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Consumer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/ProducerConsumerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
               <folding>
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#287#296#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Container.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/Producer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="432">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Producer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="143">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#331#332#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/LinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Container.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="266" column="13" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/Semaphore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="188" column="41" lean-forward="true" selection-start-line="188" selection-start-column="41" selection-end-line="188" selection-end-column="41" />
+            <state relative-caret-position="177">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
-                <element signature="e#8009#8010#0" expanded="true" />
-                <element signature="e#8073#8074#0" expanded="true" />
-                <element signature="e#9084#9085#0" expanded="true" />
-                <element signature="e#9131#9132#0" expanded="true" />
-                <element signature="e#15885#15886#0" expanded="true" />
-                <element signature="e#15922#15923#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Producer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="1340" column="28" selection-start-line="1340" selection-start-column="12" selection-end-line="1340" selection-end-column="28" />
+            <state relative-caret-position="407">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding>
-                <element signature="e#20991#20992#0" expanded="true" />
-                <element signature="e#21042#21043#0" expanded="true" />
-                <element signature="e#22933#22934#0" expanded="true" />
-                <element signature="e#22965#22966#0" expanded="true" />
-                <element signature="e#32644#32645#0" expanded="true" />
-                <element signature="e#32694#32695#0" expanded="true" />
-                <element signature="e#41392#41393#0" expanded="true" />
-                <element signature="e#41449#41450#0" expanded="true" />
-                <element signature="e#45599#45600#0" expanded="true" />
-                <element signature="e#45656#45657#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/ProducerConsumerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Consumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="342">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding>
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/ProducerConsumerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -146,6 +132,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/ProducerConsumerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Container.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/Consumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/Producer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/ProducerConsumerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Producer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Consumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/ProducerConsumerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Container.java" />
       </list>
     </option>
   </component>
@@ -239,7 +232,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kingdombiao" type="462c0819:PsiDirectoryNode" />
               <item name="producerConsumer" type="462c0819:PsiDirectoryNode" />
-              <item name="semaphore" type="462c0819:PsiDirectoryNode" />
+              <item name="blockingQueue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GuardedSuspension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kingdombiao" type="462c0819:PsiDirectoryNode" />
+              <item name="producerConsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="condition" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,12 +255,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565748338857" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565761283574" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kingdombiao.producerConsumer.condition" />
+      <recent name="com.kingdombiao.producerConsumer.blockingQueue" />
       <recent name="com.kingdombiao.producerConsumer.semaphore" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -276,20 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProducerConsumerTest (1)">
-    <configuration name="LockDownApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kingdombiao.lockTest.LockDownApp" />
-      <module name="GuardedSuspension" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kingdombiao.lockTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ProducerConsumerTest (3)">
     <configuration name="ProducerConsumerTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kingdombiao.producerConsumer.semaphore.ProducerConsumerTest" />
       <module name="GuardedSuspension" />
@@ -303,12 +295,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerConsumerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kingdombiao.producerConsumer.waitAndnotify.ProducerConsumerTest" />
+    <configuration name="ProducerConsumerTest (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kingdombiao.producerConsumer.blockingQueue.ProducerConsumerTest" />
       <module name="GuardedSuspension" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kingdombiao.producerConsumer.waitAndnotify.*" />
+          <option name="PATTERN" value="com.kingdombiao.producerConsumer.blockingQueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -316,12 +308,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReentrantReadWriteLockApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kingdombiao.lockTest.ReentrantReadWriteLockApp" />
+    <configuration name="ProducerConsumerTest (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kingdombiao.producerConsumer.condition.ProducerConsumerTest" />
       <module name="GuardedSuspension" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kingdombiao.lockTest.*" />
+          <option name="PATTERN" value="com.kingdombiao.producerConsumer.condition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerConsumerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kingdombiao.producerConsumer.waitAndnotify.ProducerConsumerTest" />
+      <module name="GuardedSuspension" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kingdombiao.producerConsumer.waitAndnotify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -344,11 +349,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProducerConsumerTest (3)" />
+        <item itemvalue="Application.ProducerConsumerTest (2)" />
         <item itemvalue="Application.ProducerConsumerTest (1)" />
         <item itemvalue="Application.ProducerConsumerTest" />
         <item itemvalue="Application.WaitNotifyTest" />
-        <item itemvalue="Application.LockDownApp" />
-        <item itemvalue="Application.ReentrantReadWriteLockApp" />
       </list>
     </recent_temporary>
   </component>
@@ -363,7 +368,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565349601700</updated>
       <workItem from="1565349605101" duration="605000" />
-      <workItem from="1565571574748" duration="34316000" />
+      <workItem from="1565571574748" duration="41546000" />
     </task>
     <task id="LOCAL-00001" summary="代码提交">
       <created>1565349738438</created>
@@ -372,17 +377,30 @@
       <option name="project" value="LOCAL" />
       <updated>1565349738438</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="生产者消费者模拟">
+      <created>1565748372440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565748372441</updated>
+    </task>
+    <task id="LOCAL-00003" summary="BlockingQueue实现生产者消费者">
+      <created>1565750844798</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565750844798</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34921000" />
+    <option name="totallyTimeSpent" value="42151000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2175368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21218206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -392,8 +410,8 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896653" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32605532" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36390102" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.09024745" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15720524" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -418,43 +436,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="代码提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码提交" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
-          <line>1340</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/Semaphore.java</url>
-          <line>189</line>
-          <properties />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
-          <line>682</line>
-          <properties />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
-          <line>1302</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/Semaphore.java</url>
-          <line>179</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="生产者消费者模拟" />
+    <MESSAGE value="BlockingQueue实现生产者消费者" />
+    <option name="LAST_COMMIT_MESSAGE" value="BlockingQueue实现生产者消费者" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -656,29 +640,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="266" column="13" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
+        <state relative-caret-position="380">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="1340" column="28" selection-start-line="1340" selection-start-column="12" selection-end-line="1340" selection-end-column="28" />
+        <state relative-caret-position="437">
+          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
           <folding>
-            <element signature="e#20991#20992#0" expanded="true" />
-            <element signature="e#21042#21043#0" expanded="true" />
-            <element signature="e#22933#22934#0" expanded="true" />
-            <element signature="e#22965#22966#0" expanded="true" />
-            <element signature="e#32644#32645#0" expanded="true" />
-            <element signature="e#32694#32695#0" expanded="true" />
-            <element signature="e#41392#41393#0" expanded="true" />
-            <element signature="e#41449#41450#0" expanded="true" />
-            <element signature="e#45599#45600#0" expanded="true" />
-            <element signature="e#45656#45657#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/ProducerConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -697,41 +689,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/ProducerConsumerTest.java">
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="122">
+          <caret line="266" column="13" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="337">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Consumer.java">
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="188">
+          <caret line="180" column="12" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/AbstractQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="94" column="17" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/locks/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="467" column="9" selection-start-line="467" selection-start-column="9" selection-end-line="467" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="1716" column="26" selection-start-line="1716" selection-start-column="26" selection-end-line="1716" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="352" column="29" selection-start-line="352" selection-start-column="24" selection-end-line="352" selection-end-column="29" />
           <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#3652#3653#0" expanded="true" />
+            <element signature="e#3708#3709#0" expanded="true" />
+            <element signature="e#6812#6813#0" expanded="true" />
+            <element signature="e#6849#6850#0" expanded="true" />
+            <element signature="e#9697#9698#0" expanded="true" />
+            <element signature="e#9732#9733#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Producer.java">
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="460">
+          <caret line="2044" column="65" lean-forward="true" selection-start-line="2044" selection-start-column="65" selection-end-line="2044" selection-end-column="65" />
+          <folding>
+            <element signature="e#20991#20992#0" expanded="true" />
+            <element signature="e#21042#21043#0" expanded="true" />
+            <element signature="e#22933#22934#0" expanded="true" />
+            <element signature="e#22965#22966#0" expanded="true" />
+            <element signature="e#32644#32645#0" expanded="true" />
+            <element signature="e#32694#32695#0" expanded="true" />
+            <element signature="e#41392#41393#0" expanded="true" />
+            <element signature="e#41449#41450#0" expanded="true" />
+            <element signature="e#45599#45600#0" expanded="true" />
+            <element signature="e#45656#45657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/ProducerConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/condition/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/ProducerConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#287#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/blockingQueue/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

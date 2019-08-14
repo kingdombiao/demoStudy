@@ -6,7 +6,7 @@ import java.util.concurrent.BlockingQueue;
 
 /**
  * 描述:
- * ${DESCRIPTION}
+ * BlockingQueue
  *
  * @author biao
  * @create 2019-08-13 15:46
