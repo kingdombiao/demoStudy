@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @create 2019-08-14 11:07
  */
 public class Container {
-    private final Lock lock = new ReentrantLock();
+    private final ReentrantLock lock = new ReentrantLock();
     //生产者线程
     private final Condition notFull = lock.newCondition();
     //消费者线程
