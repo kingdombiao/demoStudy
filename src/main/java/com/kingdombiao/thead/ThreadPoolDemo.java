@@ -55,6 +55,8 @@ public class ThreadPoolDemo {
             };
             //丢给线程池去执行
             THREAD_POOL_EXECUTOR.execute(runnable);
+
+            THREAD_POOL_EXECUTOR.shutdownNow();
         }
     }
 
