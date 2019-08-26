@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e8af08c-0058-4ac4-afb3-9520bf85cd5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/bean/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/bean/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/listener/initListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/zookeeper/LoadBlance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/zookeeper/ServerSubscribe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ServerRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/initListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingdombiao/blockingQueue/BlockingQueueDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/DemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zookeeperdemo/src/main/java/com/kingdombiao/distributedlocks/ZkDistributedLock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeperdemo/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeperdemo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeperdemo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeperdemo/src/main/java/com/kingdombiao/zk/javaapi/ApiOperatorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/zookeeperdemo/src/main/java/com/kingdombiao/zk/javaapi/ApiOperatorDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/OrderserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/OrderserviceApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/zookeeperdemo/target/" />
@@ -35,112 +20,112 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ProductserviceApplication.java">
+        <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/DemoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="210">
+              <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/productservice/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/productservice/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/listener/initListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/zookeeper/ServerSubscribe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/zookeeper/LoadBlance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/initListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/OrderserviceApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-              <folding>
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orderservice/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/orderservice/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/zookeeperdemo/src/main/java/com/kingdombiao/distributedlocks/ZkDistributedLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+            <state relative-caret-position="418">
+              <caret line="99" column="50" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1910#1911#0" expanded="true" />
+                <element signature="e#1937#1938#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ProductserviceApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/controller/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="28" column="57" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/SortedSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/TreeSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+              <folding>
+                <element signature="e#4697#4698#0" expanded="true" />
+                <element signature="e#4742#4743#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/NavigableSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/AbstractSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="57" column="55" lean-forward="true" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/AbstractCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -168,8 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/ProducerConsumerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/waitAndnotify/ProducerConsumerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/ProducerConsumerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingdombiao/producerConsumer/semaphore/Container.java" />
@@ -217,8 +200,10 @@
         <option value="$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/bean/Product.java" />
         <option value="$PROJECT_DIR$/productservice/pom.xml" />
         <option value="$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/initListener.java" />
-        <option value="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/OrderserviceApplication.java" />
         <option value="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/zookeeper/ServerSubscribe.java" />
+        <option value="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/OrderserviceApplication.java" />
+        <option value="$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/DemoTest.java" />
+        <option value="$PROJECT_DIR$/zookeeperdemo/src/main/java/com/kingdombiao/distributedlocks/ZkDistributedLock.java" />
       </list>
     </option>
   </component>
@@ -313,7 +298,9 @@
               <item name="orderservice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orderservice" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GuardedSuspension" type="b2602c69:ProjectViewProjectNode" />
@@ -353,10 +340,47 @@
             <path>
               <item name="GuardedSuspension" type="b2602c69:ProjectViewProjectNode" />
               <item name="demoStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="productservice" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeperdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GuardedSuspension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeperdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GuardedSuspension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeperdemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GuardedSuspension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeperdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GuardedSuspension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeperdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kingdombiao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GuardedSuspension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeperdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kingdombiao" type="462c0819:PsiDirectoryNode" />
+              <item name="distributedlocks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -371,7 +395,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566807027293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566815473941" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -380,8 +404,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.kingdombiao.productservice" />
       <recent name="com.kingdombiao.orderservice" />
+      <recent name="com.kingdombiao.productservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.kingdombiao.producerConsumer.condition" />
@@ -404,7 +428,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderserviceApplication">
+  <component name="RunManager" selected="Application.DemoTest">
     <configuration name="ApiOperatorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kingdombiao.zk.javaapi.ApiOperatorDemo" />
       <module name="zookeeperdemo" />
@@ -424,6 +448,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kingdombiao.ConcurrentContainer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kingdombiao.orderservice.DemoTest" />
+      <module name="orderservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kingdombiao.orderservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -455,22 +492,6 @@
       <option name="PACKAGE_NAME" value="com.kingdombiao.blockingQueue" />
       <option name="MAIN_CLASS_NAME" value="com.kingdombiao.blockingQueue.BlockingQueueDemo" />
       <option name="METHOD_NAME" value="testArrayBlockingQueue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CopyOnWriteArrayListDemo.testHappenBefore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GuardedSuspension" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kingdombiao.ConcurrentContainer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.kingdombiao.ConcurrentContainer" />
-      <option name="MAIN_CLASS_NAME" value="com.kingdombiao.ConcurrentContainer.CopyOnWriteArrayListDemo" />
-      <option name="METHOD_NAME" value="testHappenBefore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -510,19 +531,19 @@
       <item itemvalue="Application.ApiOperatorDemo" />
       <item itemvalue="Application.ConcurrentLinkedQueueDemo" />
       <item itemvalue="JUnit.BlockingQueueDemo.testArrayBlockingQueue" />
-      <item itemvalue="JUnit.CopyOnWriteArrayListDemo.testHappenBefore" />
       <item itemvalue="Spring Boot.ProductserviceApplication" />
       <item itemvalue="Spring Boot.OrderserviceApplication" />
       <item itemvalue="Spring Boot.ZookeeperdemoApplication" />
       <item itemvalue="Application.ProductserviceApplication" />
+      <item itemvalue="Application.DemoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoTest" />
         <item itemvalue="Application.ProductserviceApplication" />
         <item itemvalue="Application.ApiOperatorDemo" />
         <item itemvalue="JUnit.BlockingQueueDemo.testArrayBlockingQueue" />
         <item itemvalue="Application.ConcurrentLinkedQueueDemo" />
-        <item itemvalue="JUnit.CopyOnWriteArrayListDemo.testHappenBefore" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +561,7 @@
       <workItem from="1565571574748" duration="67565000" />
       <workItem from="1565917363076" duration="39939000" />
       <workItem from="1566297160285" duration="571000" />
-      <workItem from="1566783415493" duration="16784000" />
+      <workItem from="1566783415493" duration="20839000" />
     </task>
     <task id="LOCAL-00001" summary="代码提交">
       <created>1565349738438</created>
@@ -584,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566210119169</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="demo">
+      <created>1566807234920</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1566807234920</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -620,14 +648,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125464000" />
+    <option name="totallyTimeSpent" value="129519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25769746" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21485944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -640,8 +668,8 @@
       <window_info anchor="bottom" id="Debug with VisualVM" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.48762736" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.503639" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5021834" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13537118" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6084425" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -799,89 +827,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/thead/semaphore/SemaphoreDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/Semaphore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="186" column="32" selection-start-line="186" selection-start-column="32" selection-end-line="186" selection-end-column="32" />
-          <folding>
-            <element signature="e#8009#8010#0" expanded="true" />
-            <element signature="e#8073#8074#0" expanded="true" />
-            <element signature="e#15885#15886#0" expanded="true" />
-            <element signature="e#15922#15923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/Exchanger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="516" column="17" lean-forward="true" selection-start-line="516" selection-start-column="17" selection-end-line="516" selection-end-column="17" />
-          <folding>
-            <element signature="e#22414#22415#0" expanded="true" />
-            <element signature="e#22461#22462#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingdombiao/thead/exchanger/ExchangerDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="43" column="54" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#369#378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="332" column="34" selection-start-line="332" selection-start-column="34" selection-end-line="332" selection-end-column="34" />
-          <folding>
-            <element signature="e#11566#11567#0" expanded="true" />
-            <element signature="e#11597#11598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="132" column="51" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
-          <folding>
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1798#1799#0" expanded="true" />
-            <element signature="e#4504#4505#0" expanded="true" />
-            <element signature="e#4572#4573#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="913" column="16" selection-start-line="913" selection-start-column="16" selection-end-line="913" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#43969#43970#0" expanded="true" />
-            <element signature="e#43996#43997#0" expanded="true" />
-            <element signature="e#51076#51077#0" expanded="true" />
-            <element signature="e#51138#51139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -1188,26 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1259,16 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ProductserviceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/orderservice/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1298,10 +1213,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/orderservice/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/OrderserviceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="323">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#458#459#0" expanded="true" />
             <element signature="e#532#533#0" expanded="true" />
@@ -1309,10 +1231,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orderservice/src/main/resources/application.properties">
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/SortedSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        <state relative-caret-position="213">
+          <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/AbstractSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="57" column="55" lean-forward="true" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/NavigableSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/DevInstall/Jdk/jdk1.8.0_152/src.zip!/java/util/TreeSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+          <folding>
+            <element signature="e#4697#4698#0" expanded="true" />
+            <element signature="e#4742#4743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/DemoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ProductserviceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/productservice/src/main/java/com/kingdombiao/productservice/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orderservice/src/main/java/com/kingdombiao/orderservice/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zookeeperdemo/src/main/java/com/kingdombiao/distributedlocks/ZkDistributedLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="99" column="50" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
