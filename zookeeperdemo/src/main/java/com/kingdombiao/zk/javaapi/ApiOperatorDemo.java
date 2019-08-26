@@ -51,8 +51,8 @@ public class ApiOperatorDemo implements Watcher {
         zooKeeper.setData("/kingdombiao/kingdombiao10000000002","kingdombiao2".getBytes(),-1);
        TimeUnit.SECONDS.sleep(1);*/
 
-        createParentNode("/node1/node2/node3/node4");
-        deleteNode("/node1/node2");
+        createParentNode("/services/products");
+        //deleteNode("/node1/node2");
     }
 
 
