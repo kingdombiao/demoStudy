@@ -1838,4 +1838,25 @@ public class JedisUtils {
 			pool.returnResource(jedis);
 		}
 	}
+
+	/**
+	 * 获取key 的过期时间
+	 * @param key
+	 * @return
+	 */
+	public Long getKeyTtl(String key){
+		Jedis jedis = null;
+		Long ttl=null;
+		try {
+			jedis = pool.getResource();
+			ttl = jedis.ttl(key);
+		} catch (Exception e) {
+			pool.returnBrokenResource(jedis);
+			e.printStackTrace();
+		} finally {
+			returnResource(pool, jedis);
+		}
+		return ttl;
+	}
+
 }

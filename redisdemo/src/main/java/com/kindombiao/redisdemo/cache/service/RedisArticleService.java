@@ -7,8 +7,12 @@ import java.util.Map;
 
 public interface RedisArticleService {
     String postArticle(Article article);
+
     Map<String, String> hgetAll(String key);
-    void articleVote(String userId, String articleId);
+
+    void articleVote(String userId, String articleKey);
+
     String hget(String key, String votes);
-    List<Map<String,String>> getArticles(int page, String order);
+
+    List<Map<String, String>> getArticles(int page, String order);
 }

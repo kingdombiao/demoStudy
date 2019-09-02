@@ -9,6 +9,7 @@ import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -59,8 +60,13 @@ public class RedisArticleServiceImpl implements RedisArticleService {
 
         //设置文章的过期时间
         DateTime dateTime = new DateTime(new Date()).plusDays(7);
-        jedis.expire(articleKey, dateTime.toDate().getSeconds());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String format = simpleDateFormat.format(dateTime.toDate());
+        log.info("文章的过期时间为；"+format);
+        jedis.expire(articleKey, Long.valueOf(dateTime.toDate().getTime() / 1000).intValue());
 
+        log.info("当前时间戳为："+new Date().getTime()/1000);
+        log.info("文章的过期时间戳为；"+dateTime.toDate().getTime()/1000);
         return articleId;
     }
 
@@ -75,14 +81,17 @@ public class RedisArticleServiceImpl implements RedisArticleService {
     public void articleVote(String userId, String articleKey) {
 
         //获取该文章的发布时间
-        String publishTime = jedis.hget(articleKey, "publishtime");
+        //String publishTime = jedis.hget(articleKey, "publishtime");
 
         /*if(Long.valueOf(publishTime)<(System.currentTimeMillis() / 1000)){
             log.info("该{}文章已过期....",articleKey);
             return;
         }*/
 
-        if(jedis.zscore("publishtime:article",articleKey)<(System.currentTimeMillis() / 1000)){
+        //Double zscore = jedis.zscore("publishtime:article", articleKey);
+
+
+        if(jedis.getKeyTtl(articleKey)<(System.currentTimeMillis() / 1000)){
             log.info("该{}文章投票时间已经截止.....",articleKey);
             return;
         }
