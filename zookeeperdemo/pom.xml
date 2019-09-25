@@ -20,6 +20,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.11</version>
+        </dependency>
+        <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
             <version>3.2.1</version>
