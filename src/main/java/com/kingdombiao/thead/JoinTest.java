@@ -1,5 +1,7 @@
 package com.kingdombiao.thead;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * 描述:
  * ${DESCRIPTION}
@@ -21,15 +23,24 @@ public class JoinTest {
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                System.out.println("i want to executor before  2.............");
+                try {
+                    System.out.println("i want to executor before  2.............");
+                    TimeUnit.SECONDS.sleep(5);
+                    System.out.println("估计你也不会执行.........");
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
+                    System.out.println("守护线程finally 不会执行");
+                }
             }
+
         });
 
+        thread1.setDaemon(true);
         thread1.start();
         thread.start();
-        thread1.join();
-        thread.join();
-
+        /*thread1.join();
+        thread.join();*/
         System.out.println("i want to executor after.............");
 
 

@@ -15,22 +15,97 @@ public class ReentrantLockApp {
 
     public static void main(String[] args) {
 
-        ReentrantLock reentrantLock = new ReentrantLock();
-        /*reentrantLock.lock();
-        reentrantLock.unlock();*/
+        ReentrantLock reentrantLock = new ReentrantLock(true);
+  /*
+        new Thread(){
+            @Override
+            public void run() {
+                System.out.println("线程一释放锁");
+                reentrantLock.unlock();
+                System.out.println("线程一执行");
+                reentrantLock.lock();
+
+            }
+        }.start();
+
+     new Thread(){
+            @Override
+            public void run() {
+                System.out.println("线程二执行");
+                reentrantLock.lock();
+                System.out.println("线程二释放锁");
+                reentrantLock.unlock();
+            }
+        }.start();
+
+        new Thread(){
+            @Override
+            public void run() {
+                System.out.println("线程三执行");
+                reentrantLock.lock();
+                System.out.println("线程三释放锁");
+                reentrantLock.unlock();
+
+            }
+        }.start();*/
 
         Condition condition1 = reentrantLock.newCondition();
-        Condition condition2 = reentrantLock.newCondition();
+        new Thread(){
+            @Override
+            public void run() {
+                try {
+                    reentrantLock.lock();
+                    condition1.await();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }finally {
+                    reentrantLock.unlock();
+                }
+            }
+        }.start();
 
-        try {
-            reentrantLock.lock();
-            condition1.await();
-            //condition2.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }finally {
-            condition1.signal();
-        }
+       /* new Thread(){
+            @Override
+            public void run() {
+                try {
+                    reentrantLock.lock();
+                    condition1.await();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }finally {
+                    reentrantLock.unlock();
+                }
+            }
+        }.start();
+
+        new Thread(){
+            @Override
+            public void run() {
+                try {
+                    reentrantLock.lock();
+                    condition1.await();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }finally {
+                    reentrantLock.unlock();
+                }
+            }
+        }.start();*/
+
+        new Thread(){
+            @Override
+            public void run() {
+                try {
+                    reentrantLock.lock();
+                    condition1.signal();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }finally {
+                    reentrantLock.unlock();
+                }
+            }
+        }.start();
+
 
     }
 }

@@ -19,7 +19,8 @@ public class JoinDemo extends Thread{
     @Override
     public void run() {
        try {
-           previousThread.join();
+          // previousThread.join();
+           TimeUnit.MILLISECONDS.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -28,14 +29,14 @@ public class JoinDemo extends Thread{
     public static void main(String[] args) throws InterruptedException {
 
         Thread previousThread=Thread.currentThread();
-        for(int i=0;i<1;i++){
+        for(int i=0;i<2;i++){
             JoinDemo joinDemo=new JoinDemo(previousThread,i);
             joinDemo.start();
-            //previousThread=joinDemo;
-            //joinDemo.join();
+            previousThread=joinDemo;
+           joinDemo.join();
         }
 
-        //TimeUnit.SECONDS.sleep(5);
+        TimeUnit.SECONDS.sleep(5);
         System.out.println("ddad");
     }
 }

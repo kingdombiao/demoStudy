@@ -33,7 +33,7 @@ public class ReentrantReadWriteLockApp {
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
-            readLock.unlock();
+            //readLock.unlock();
         }
         return map.get(key);
     }
@@ -54,10 +54,35 @@ public class ReentrantReadWriteLockApp {
 
     public static void main(String[] args) {
         ReentrantReadWriteLockApp app = new ReentrantReadWriteLockApp();
-        //app.put("key2", "value2");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                app.put("key2", "value2");
+            }
+        }).start();
 
-        System.out.println(app.get("kkk"));
-        System.out.println(app.get("kkk"));
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                app.put("key2", "value2");
+            }
+        }).start();
+
+        System.out.println(app.get("key1"));
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                app.get("key2");
+            }
+        }).start();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                app.get("key3");
+            }
+        }).start();
 
         /*LockSupport.park(new Object());
 
@@ -73,12 +98,6 @@ public class ReentrantReadWriteLockApp {
        app.put("key2", "value2");
         //app.put("key3", "value2");
 
-       new Thread(new Runnable() {
-            @Override
-            public void run() {
-               app.put("key2", "value2");
-            }
-        }).start();
  /*
         new Thread(new Runnable() {
             @Override
