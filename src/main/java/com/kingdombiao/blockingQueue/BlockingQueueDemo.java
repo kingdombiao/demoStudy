@@ -61,7 +61,7 @@ public class BlockingQueueDemo {
 
         LinkedBlockingDeque linkedBlockingDeque = new LinkedBlockingDeque();*/
 
-       log.info(""+negation(1230));
+       //log.info(""+negation(1230));
 
 
 

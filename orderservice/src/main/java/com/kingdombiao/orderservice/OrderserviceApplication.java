@@ -1,13 +1,16 @@
 package com.kingdombiao.orderservice;
 
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import com.kingdombiao.orderservice.listener.initListener;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.EventListener;
 
+@EnableDubbo
 @SpringBootApplication
 public class OrderserviceApplication {
 
@@ -20,6 +23,11 @@ public class OrderserviceApplication {
         ServletListenerRegistrationBean<EventListener> servletListenerRegistrationBean = new ServletListenerRegistrationBean<>();
         servletListenerRegistrationBean.setListener(new initListener());
         return servletListenerRegistrationBean;
+    }
+
+    @Bean
+    public RestTemplate restTemplate(){
+        return new RestTemplate();
     }
 
 

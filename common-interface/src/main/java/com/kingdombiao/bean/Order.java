@@ -1,19 +1,25 @@
-package com.kingdombiao.productservice;
+package com.kingdombiao.bean;
+
+import java.io.Serializable;
 
 /**
  * 描述:
  * ${DESCRIPTION}
  *
  * @author unovo
- * @create 2019-08-26 15:59
+ * @create 2019-08-26 15:16
  */
-public class Product {
+public class Order implements Serializable {
+
     private String id;
     private String name;
 
-    public Product(String id, String name) {
+    private Product product;
+
+    public Order(String id, String name, Product product) {
         this.id = id;
         this.name = name;
+        this.product = product;
     }
 
     public String getId() {
@@ -30,5 +36,13 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 }

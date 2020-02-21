@@ -1,5 +1,6 @@
 package com.kingdombiao.productservice;
 
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
@@ -7,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.EventListener;
 
+@EnableDubbo
 @SpringBootApplication
 public class ProductserviceApplication {
 
