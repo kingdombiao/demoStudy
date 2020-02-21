@@ -11,7 +11,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
 
 import java.security.KeyPair;
-import java.security.MessageDigest;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.Map;
@@ -53,6 +52,7 @@ public class SignExample {
      */
     public static boolean rsaSignVerify(String data, String publicKeyStr, String signStr) {
         byte[] mdigestSHA = MdigestSHA(data);
+        if(null== mdigestSHA)  return false;
         //将公钥字符串转成成公钥对象
         PublicKey publicKey = SecureUtil.generatePublicKey("RSA", Base64.decode(publicKeyStr));
         // 设置签名对象以及加密算法
@@ -136,6 +136,8 @@ public class SignExample {
 
         //签名
         String sign = rsaSign(data.toJSONString(), keyPair[0]);
+        System.out.println("sign length = "+sign.length());
+        System.out.println("sign = "+sign);
         //验签
         boolean result = rsaSignVerify(data.toJSONString(), keyPair[1], sign);
         if (result) {
